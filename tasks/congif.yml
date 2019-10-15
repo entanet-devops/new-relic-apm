@@ -2,12 +2,12 @@
   debconf:
     name: newrelic-php5
     question: newrelic-php5/application-name
-    value: "{{app_name}}"
+    value: "{{ app_name }}"
     vtype: string
 
 - name: Configure new relic license key
   debconf:
     name: newrelic-php5
     question: newrelic-php5/license-key
-    value: "{{license_key}}"
+    value: "{{ license_key }}"
     vtype: string

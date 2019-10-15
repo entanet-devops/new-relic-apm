@@ -9,5 +9,10 @@ galaxy_info:
 
   galaxy_tags:
     - entanet
-    - newRelic
-    - APM
+    - newrelic
+    - apm
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - bionic
