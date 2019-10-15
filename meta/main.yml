@@ -1,0 +1,14 @@
+galaxy_info:
+  author: Mark 'The Pirate' Jones
+  description: New Relic APM Installer
+  company: Entanet
+
+  license: BSD
+
+  min_ansible_version: 2.5
+
+  galaxy_tags:
+    - entanet
+    - newRelic
+    - APM
+  © 2019 GitHub, Inc.
