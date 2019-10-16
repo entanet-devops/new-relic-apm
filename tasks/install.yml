@@ -1,11 +1,11 @@
-- name: Configure the New Relic apt repository.
-  apt_repository:
-    repo: deb http://apt.newrelic.com/debian/ newrelic non-free
-    state: present
-
 - name: Trust the New Relic GPG key
   apt_key:
     url: https://download.newrelic.com/548C16BF.gpg
+    state: present
+
+- name: Configure the New Relic apt repository.
+  apt_repository:
+    repo: deb http://apt.newrelic.com/debian/ newrelic non-free
     state: present
 
 - name: Update the local package list & Install the PHP agent.
