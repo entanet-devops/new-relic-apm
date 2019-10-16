@@ -7,6 +7,7 @@
   apt_repository:
     repo: deb http://apt.newrelic.com/debian/ newrelic non-free
     state: present
+    update_cache: yes
 
 - name: Update the local package list & Install the PHP agent.
   apt:
