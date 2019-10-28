@@ -1,2 +1,2 @@
-new_relic_apm_app_name: "{{project_environment}}-{% if app_name is defined%} {{app_name}} {% else %} {{app_directory | basename }} {% endif %}"
+new_relic_apm_app_name: "{{ project_environment }}-{{ app_name if (app_name is defined) else app_directory | basename }}"
 new_relic_apm_license_key: "{{ lookup('aws_ssm', '/devops/newrelic/licence/key') }}"
