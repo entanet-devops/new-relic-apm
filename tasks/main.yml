@@ -1,7 +1,7 @@
 - name: config APM
   include: config.yml
-  when: app_name is defined or app_directory is defined
+  when: (app_name is defined or app_directory is defined) and project_environment
 
 - name: install APM
   include: install.yml
-  when: app_name is defined or app_directory is defined
+  when: (app_name is defined or app_directory is defined) and project_environment
