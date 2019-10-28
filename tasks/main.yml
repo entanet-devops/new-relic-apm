@@ -1,2 +1,7 @@
-- include: config.yml
-- include: install.yml
+- name: config APM
+  include: config.yml
+  when: app_name is defined or app_directory is defined
+
+- name: install APM
+  include: install.yml
+  when: app_name is defined or app_directory is defined
