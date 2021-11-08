@@ -2,6 +2,6 @@
   include: config.yml
   when: (app_name is defined or app_directory is defined) and project_environment is defined
 
-# - name: install APM
-#   include: install.yml
-#   when: (app_name is defined or app_directory is defined) and project_environment is defined
+- name: install APM
+  include: install.yml
+  when: (app_name is defined or app_directory is defined) and project_environment is defined
